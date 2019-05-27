@@ -10,7 +10,13 @@ nav
     text-align: center;
 }
 
+<<<<<<< HEAD
+ul {
+    display: flex;
+    justify-content: center;
+=======
 #nav {
+>>>>>>> 53e2059b36a4482556cf8af1a580ed633b5959c6
     margin-left: auto;
     margin-right: auto;
     list-style-type: none;
@@ -18,24 +24,51 @@ nav
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    box-shadow: 3px 3px 3px #aaa;
+
   }
-  
+
   li {
     float: left;
   }
-  
+
   li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: Monaco, "DejaVu Sans Mono", "Lucida Console", "Andale Mono", monospace;
   }
-  
+
   li a:hover {
     background-color:red;
   }
 
+<<<<<<< HEAD
+  div#centerDiv {
+      width: 100%;
+      text-align: center;
+  }
+  ul.centerUL {
+      margin: 2px auto;
+      line-height: 1.4;
+      padding-left: 0;
+  }
+  .centerUL li {
+      display: inline;
+      text-align: center;
+  }
+
+  ul img
+  {
+    align-items: center;
+    max-width: 100px;
+    height:45px;
+    background-color: black;
+    align-content: left;
+  }
+=======
   /*ecuries img*/
   .ecuries_ferrari, .ecuries_haas, .ecuries_Mclaren, .ecuries_mercedes, .ecuries_racing, .ecuries_redbull, .ecuries_renault, .ecuries_torro, .ecuries_williams, .ecuries_alpharomeo
   {
@@ -169,3 +202,4 @@ nav
     from {left: 0px;}
     to {left: 1000px;}
   }
+>>>>>>> 53e2059b36a4482556cf8af1a580ed633b5959c6
