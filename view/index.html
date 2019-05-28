@@ -3,8 +3,7 @@
     <head>
         <title>Formula ONE</title>
         <link rel="stylesheet" type="text/css" href="../css/index.css">
-    </head>
-    
+        <script type="text/javascript" src="../js/index.js"></script>    </head>
     <body>
         <!-- navbar -->
         <ul id="nav">
@@ -12,26 +11,28 @@
             <li><a href="#ecuries">Ecuries</a></li>
             <li><a href="#voitures">Voitures</a></li>
             <li><a href="#pilotes">Pilotes</a></li>
-            <li><a href="#propos">A propos</a></li>
+            <li><a href="#propos">Informations</a></li>
         </ul>
         
+    <!--
         <div id="moov">
             <img id="img_moov" src="../img/Cars/mercedes_car.png" alt="">
         </div>
+    -->
 
         <!-- Choix ecuries -->
-        <div>
+        <div id="choix">
             <ul id="ecuries_img">
                 <li><img class="ecuries_ferrari" src="../img/Ecuries/Ferrari_ecuries.jpg"/></li>
-                <li><img class="ecuries_haas" src="../img/Ecuries/Haas_ecuries.png"/></li>
-                <li><img class="ecuries_Mclaren" src="../img/Ecuries/McLaren_ecuries.jpg"/></li>
-                <li><img class="ecuries_mercedes" src="../img/Ecuries/Mercedes_ecuries.jpg"></li>
-                <li><img class="ecuries_racing" src="../img/Ecuries/Racing_point_ecuries.jpg"/></li>
-                <li><img class="ecuries_redbull" src="../img/Ecuries/Red_bull_ecuries.jpg"/></li>
-                <li><img class="ecuries_renault" src="../img/Ecuries/Renault_ecuries.jpg"/></li>
-                <li><img class="ecuries_torro" src="../img/Ecuries/Toro_rosso_ecuries.jpg"/></li>
-                <li><img class="ecuries_williams" src="../img/Ecuries/Williams_ecuries.jpeg"/></li>
-                <li><img class="ecuries_alpharomeo" src="../img/Ecuries/alpha_romeo_ecuries.png"/></li>
+                <li><img onmouseover="bacground_haas()" onmouseout="defaut()" class="ecuries_haas" src="../img/Ecuries/Haas_ecuries.png"/></li>
+                <li><img onmouseover="bacground_maclaren()" onmouseout="defaut()" class="ecuries_Mclaren" src="../img/Ecuries/McLaren_ecuries.jpg"/></li>
+                <li><img onmouseover="bacground_mercedes()" onmouseout="defaut()" class="ecuries_mercedes" src="../img/Ecuries/Mercedes_ecuries.jpg"></li>
+                <li><img onmouseover="bacground_force_india()" onmouseout="defaut()" class="ecuries_racing" src="../img/Ecuries/Racing_point_ecuries.jpg"/></li>
+                <li><img onmouseover="bacground_redbull()" onmouseout="defaut()" class="ecuries_redbull" src="../img/Ecuries/Red_bull_ecuries.jpg"/></li>
+                <li><img onmouseover="bacground_renault()" onmouseout="defaut()" class="ecuries_renault" src="../img/Ecuries/Renault_ecuries.jpg"/></li>
+                <li><img onmouseover="bacground_torrorosso()" onmouseout="defaut()" class="ecuries_torro" src="../img/Ecuries/Toro_rosso_ecuries.jpg"/></li>
+                <li><img onmouseover="bacground_williams()" onmouseout="defaut()" class="ecuries_williams" src="../img/Ecuries/Williams_ecuries.jpeg"/></li>
+                <li><img onmouseover="bacground_alpharomeo()" onmouseout="defaut()" class="ecuries_alpharomeo" src="../img/Ecuries/alpha_romeo_ecuries.png"/></li>
             </ul>
         </div>
 
