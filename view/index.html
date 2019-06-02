@@ -3,32 +3,31 @@
     <head>
         <title>Formula ONE</title>
         <link rel="stylesheet" type="text/css" href="../css/index.css">
-        <script type="text/javascript" src="../js/index.js"></script>    </head>
+        <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+        <script type="text/javascript" src="../js/index.js"></script>
+        <script type="text/javascript" src="../js/navigation.js"></script>    
+    </head>
     <body>
-
-            <div class="nav">
-                <input type="checkbox" id="nav-check">
-                <div class="nav-header">
-                    <div class="nav-title">
-                    <img src="../img/logof1.png" style="height: 120px; width: 90px; margin-top: -45px;"/>
+            <div class="topnav" id="myTopnav">
+                <a href="../view/index.html">Accueil</a>
+                <a href="../view/ecuries.html">Ecuries</a>
+                <a href="../view/circuits.html">Circuits</a>
+                <a href="../view/voitures.html">Voitures</a>
+                <!--
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown 
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                     </div>
                 </div>
-                <div class="nav-btn">
-                    <label for="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </label>
-                </div>
-                 
-                <div class="nav-links">
-                    <a href="">Accueil</a>
-                    <a href="../view/ecuries.html">Ecuries</a>
-                    <a href="../view/voitures.html" >Voitures</a>
-                    <a href="../view/circuits.html">Circuit</a>
-                    <a href="">Informations</a>
-                </div>
+                -->
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
+        
         <!-- Choix ecuries -->
         <div id="choix">
             <ul id="ecuries_img">
