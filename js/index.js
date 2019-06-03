@@ -5,7 +5,7 @@ function defaut()
 
 function bacground_ferrari() 
 {
-    document.body.style.backgroundImage = "";
+    document.body.style.backgroundImage = "url('../img/background/ferrari.jpg')";
 }
 
 function bacground_maclaren() 
