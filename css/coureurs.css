@@ -1,0 +1,29 @@
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 300px;
+margin: auto;
+text-align: center;
+font-family: arial;
+}
+
+
+#first
+{
+    width: 300px;
+}
+
+#second
+{
+    width: 300px;
+}
+
+#third
+{
+    width: 300px;
+}
+
+.ferrari, .haas, .racing, .mercedes, .redbull, .toro, .mclaren, .renault, .williams, .alpha
+{
+    display:flex;
+    justify-content: center;
+}
