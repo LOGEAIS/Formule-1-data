@@ -105,3 +105,48 @@
     text-align: left;
   }
 }
+
+/*Footer*/
+
+footer 
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #de0b05;
+  color: white;
+  text-align: center;
+}
+
+footer li {
+  font-size: .800em;
+  list-style-type: none;
+}
+
+#social {
+  overflow: hidden;
+  text-align: center;
+}
+
+#social ul.social, #social ul.contact {
+  display: inline-block;
+  text-align: center;
+}
+#social li {
+  margin: 0 17px 0 0;
+  list-style-type: none;
+}
+@media only screen and (max-width: 485px) {
+	#social li {
+		margin: 0 0 10px 0;
+		float: none;
+		clear: both;
+	}
+}
+
+@media only screen and (max-width: 485px) {
+	footer .last {
+		clear: both;
+	}
+}

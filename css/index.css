@@ -1,20 +1,22 @@
 
 
 /*body*/
-/* Show one image on devices under 540px */
 
+html
+{
+  height: 100%;
+}
 body
 {
-    background-image: url("../img/background/haas.jpg");
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    height: auto;
+  position: relative;
+  background-image: url("../img/background/haas.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
  
 #choix{
-  margin-top: 450px;
+  margin-top: 468px;
 }
 
 li {
@@ -36,100 +38,98 @@ li a:hover {
 /*ecuries img*/
 .ecuries_ferrari, .ecuries_haas, .ecuries_Mclaren, .ecuries_mercedes, .ecuries_racing, .ecuries_redbull, .ecuries_renault, .ecuries_torro, .ecuries_williams, .ecuries_alpharomeo
 {
-  width: 230px;
-  height: 110px;
-  border: 10px solid black;
+  border: 5px solid black;
 }
 
 .ecuries_ferrari:hover
 {
-  border: 10px solid red;
+  border: 5px solid red;
   border-right-color: yellow;
   border-left-color: green;
   transition: 1s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 
 .ecuries_haas:hover
 {
-  border: 10px solid #F0F671;
+  border: 5px solid #F0F671;
   border-right-color: black;
   border-left-color: black;
   transition: 1s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .ecuries_Mclaren:hover
 {
-  border: 10px solid orange;
+  border: 5px solid orange;
   border-right-color: black;
   border-left-color: black;
   transition: 1s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .ecuries_mercedes:hover
 {
-  border: 10px solid cyan;
+  border: 5px solid cyan;
   border-right-color: black;
   border-left-color: black;
   transition: 1s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .ecuries_racing:hover
 {
-  border: 10px solid pink;
+  border: 5px solid pink;
   border-right-color: black;
   border-left-color: black;
   transition: 1s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .ecuries_redbull:hover
 {
-  border: 10px solid blue;
+  border: 5px solid blue;
   border-right-color: red;
   border-left-color: red;
   transition: 1s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .ecuries_renault:hover
 {
-  border: 10px solid yellow;
+  border: 5px solid yellow;
   border-right-color: black;
   border-left-color: black;
   transition: 1s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .ecuries_torro:hover
 {
-  border: 10px solid blue;
+  border: 5px solid blue;
   border-right-color: red;
   border-left-color: red;
   transition: 1s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .ecuries_williams:hover
 {
-  border: 10px solid blue;
+  border: 5px solid blue;
   border-right-color: red;
   border-left-color: red;
   transition: 1s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .ecuries_alpharomeo:hover
 {
-  border: 10px solid #6B1313;
+  border: 5px solid #6B1313;
   border-right-color: red;
   border-left-color: red;
   transition: 1s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 #ecuries_img
@@ -137,22 +137,25 @@ li a:hover {
   list-style-type: none;
 }
 
-/*img_moov*/
+.card {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  }
 
-#img_moov
+img
 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  animation: mov 1s infinite;
+  width: 45%;
 }
 
-@-webkit-keyframes mov {
-  from {left: 0px;}
-  to {left: 1000px;}
+#special_img
+{
+  width: 30%;
 }
 
-@keyframes mov {
-  from {left: 0px;}
-  to {left: 1000px;}
+.first, .second, .third, .fourth
+{
+    display:flex;
+    justify-content: center;
 }
+
