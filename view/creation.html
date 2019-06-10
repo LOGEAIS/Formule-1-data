@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formula ONE</title>
+        <link rel="stylesheet" type="text/css" href="../css/creation.css">
+        <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+        <script type="text/javascript" src="../js/navigation.js"></script>
+        <script type="text/javascript" src="../js/creation.js"></script>    
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="../view/index.html">Accueil</a>
+            <a href="../view/ecuries.html">Ecuries</a>
+            <a href="../view/circuits.html">Circuits</a>
+            <a href="../view/voitures.html">Voitures</a>
+            <a href="../view/coureurs.html">Coureurs</a>
+            <a href="../view/creation.html">Création</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        
+        <img id="img" src="../img/logof1.png">
+        <br>
+
+        <form action="#">
+            <div>
+              <label class="desc" id="title1" >Nom de courreur</label>
+              <div>
+                <input id="name" type="text" value="" size="8">
+              </div>
+            </div>
+              
+            <div>
+              <label class="desc" id="title4">Description</label>
+              <div>
+                <textarea id="description" spellcheck="true" rows="10" cols="50"></textarea>
+              </div>
+            </div>
+              
+            <div>
+              <fieldset>
+                <legend id="title5" class="desc">
+                  Choisis ton écurie
+                </legend>
+                
+                <div>
+                  <select id="ecuries" name=""> 
+                    <option value="Ferrari">Ferrari</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Force India">Force India</option>
+                    <option value="Alpha Romeo">Alpha Romeo</option>
+                    <option value="Williams">Williams</option>
+                    <option value="Rebull">Rebull</option>
+                    <option value="Toro Rosso">Toro Rosso</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Haas">Haas</option>
+                    <option value="Mclaren">Mclaren</option>
+                  </select>
+                </div>
+              </fieldset>
+            </div>
+            
+            <div>
+              <label class="desc" id="">
+                  Choisis ta formule 1
+              </label>
+              <div>
+                <select id="cars" name=""> 
+                  <option value="First Choice">First Choice</option>
+                  <option value="Second Choice">Second Choice</option>
+                  <option value="Third Choice">Third Choice</option>
+                </select>
+              </div>
+            </div>
+            
+            <div>
+                <div>
+                    <button onclick="ajouter()" id="saveForm">Ajouter</button>
+                 </div>
+            </div>
+        </form>
+        
+        <div class="ferrari">
+            <div class="card" id="first">
+                <h3>Nouveau pilote pour la saison prichaine !</h3>
+                <img src="../img/creation/macron.jpg" alt="Charles-Leclerc" style="width:100%">
+                <h2 id="title_name"></h2>
+                <p class="title" >Courreur chez <span id="new"></span></p>
+                <p class="title"> </p>
+                <p class="title"></p>
+            </div>
+        </div>
+    </body>
+</html>

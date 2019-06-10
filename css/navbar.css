@@ -124,12 +124,7 @@ footer li {
   list-style-type: none;
 }
 
-#social {
-  overflow: hidden;
-  text-align: center;
-}
-
-#social ul.social, #social ul.contact {
+#social ul.social {
   display: inline-block;
   text-align: center;
 }
@@ -141,12 +136,6 @@ footer li {
 	#social li {
 		margin: 0 0 10px 0;
 		float: none;
-		clear: both;
-	}
-}
-
-@media only screen and (max-width: 485px) {
-	footer .last {
 		clear: both;
 	}
 }
