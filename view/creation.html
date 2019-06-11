@@ -21,7 +21,7 @@
         <img id="img" src="../img/logof1.png">
         <br>
 
-        <form action="#">
+        <form action="#" id="form">
             <div>
               <label class="desc" id="title1" >Nom de courreur</label>
               <div>
@@ -61,14 +61,10 @@
             
             <div>
               <label class="desc" id="">
-                  Choisis ta formule 1
+                  Date de naissance
               </label>
               <div>
-                <select id="cars" name=""> 
-                  <option value="First Choice">First Choice</option>
-                  <option value="Second Choice">Second Choice</option>
-                  <option value="Third Choice">Third Choice</option>
-                </select>
+                <input type="date" id="birth">
               </div>
             </div>
             
@@ -79,15 +75,23 @@
             </div>
         </form>
         
-        <div class="ferrari">
+        <div class="ferrari" id="result">
             <div class="card" id="first">
-                <h3>Nouveau pilote pour la saison prichaine !</h3>
-                <img src="../img/creation/macron.jpg" alt="Charles-Leclerc" style="width:100%">
+                <h3>Nouveau pilote pour la saison prochaine !</h3>
+                <img src="../img/creation/macron.jpg" style="width:100%">
                 <h2 id="title_name"></h2>
-                <p class="title" >Courreur chez <span id="new"></span></p>
-                <p class="title"> </p>
-                <p class="title"></p>
+                <p class="title">Courreur chez <span id="new"></span></p>
+                <p>Il se decrit comme "<span id="description1" class="other"></span>", en effet ce coureur d'élite a tout pour impresionner le publique lors de la prochaine saison. Avec un fort carisme, il va facilement se placer sur le podium dès les premières courses... Coureur à suivre !</p>
+                <p>Et le voilà né le <span id="birth1" class="other"></span>, il s'élance dans le monde des grands. Connu pour ces performances incroyables, ce courreur est pret à relever tous les defis !!!</p>
             </div>
+
+        
+                <div>
+                    <button onclick="nouveau()" class="nouveau">Nouveau</button>
+                 </div>
+            
         </div>
     </body>
+
+    <script> block(); </script>
 </html>
