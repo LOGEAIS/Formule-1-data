@@ -1,25 +1,30 @@
-.column {
+.column 
+{
   margin: auto;
   width: 60%;
 }
 
 .row {margin: 0 -15px;}
 
-.row:after {
+.row:after 
+{
   content: "";
   display: table;
   clear: both;
 }
 
-@media screen and (max-width: 700px) {
-  .column {
+@media screen and (max-width: 700px) 
+{
+  .column 
+  {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
 }
 
-.cardF {
+.cardF 
+{
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   background-color: #d82525;
@@ -30,7 +35,8 @@
 
 }
 
-.cardH {
+.cardH 
+{
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   background-color: #ffffff;
@@ -39,7 +45,9 @@
   padding-bottom: 10px;
   padding-left: 10px;
 }
-.cardI {
+
+.cardI 
+{
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   background-color: #ff63c6;
@@ -48,7 +56,8 @@
   padding-bottom: 10px;
   padding-left: 10px;
 }
-.cardM {
+.cardM 
+{
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   background-color: #939090;
@@ -57,7 +66,9 @@
   padding-bottom: 10px;
   padding-left: 10px;
 }
-.cardRED {
+
+.cardRED 
+{
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   background-color: #1b1b23;
@@ -67,7 +78,8 @@
   padding-left: 10px;
   color: white;
 }
-.cardT {
+.cardT 
+{
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   background-color: #ffffff;
@@ -76,7 +88,8 @@
   padding-bottom: 10px;
   padding-left: 10px;
 }
-.cardMC {
+.cardMC 
+{
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   background-color: #e04d0e;
@@ -85,7 +98,9 @@
   padding-bottom: 10px;
   padding-left: 10px;
 }
-.cardRNO {
+
+.cardRNO 
+{
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   background-color: #fdac29;
@@ -94,7 +109,9 @@
   padding-bottom: 10px;
   padding-left: 10px;
 }
-.cardW {
+
+.cardW 
+{
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   background-color: #090663;
@@ -104,7 +121,9 @@
   padding-left: 10px;
   color : white;
 }
-.cardALF {
+
+.cardALF 
+{
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   background-color: #ffffff;

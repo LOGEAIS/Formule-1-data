@@ -10,12 +10,12 @@ img
 }
 * 
 {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 button
 {
-    flex: 1 100px;
+  flex: 1 100px;
 	box-shadow: 0px 2px 5px grey;
 	border:none;
 	background-color: #F4F4F4;
@@ -25,22 +25,22 @@ button
 
 form
 {
-    overflow: scroll;
+  overflow: scroll;
 	box-sizing: border-box;
 	margin: 8px;
 	background-color: white;
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-    box-shadow: 1px 2px 1px #cfcfcf;
+  box-shadow: 1px 2px 1px #cfcfcf;
 }
 
 form > div 
 {
-    clear: both;
-    overflow: hidden;
-    padding: 1px;
-    margin: 0 0 10px 0;
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
 }
 
 form > div > fieldset > div > div 
@@ -80,10 +80,12 @@ input[type=text], input[type=date], textarea
   border : 1px solid black;
   border-radius: 2px;
 }
+
 input[type=text], input[type=date]
 {
   width: 50%;
 }
+
 input[type=text]:focus, input[type=date]:focus, textarea:focus 
 {
   outline: 0;
@@ -96,6 +98,7 @@ input[type=text]:focus, input[type=date]:focus, textarea:focus
   {
     margin: 0 0 15px 0; 
   }
+
   form > div > label,
   legend 
   {
@@ -103,53 +106,60 @@ input[type=text]:focus, input[type=date]:focus, textarea:focus
     float: none;
     margin: 0 0 5px 0;
   }
+
   form > div > div,
   form > div > fieldset > div 
   {
     width: 100%;
     float: none;
   }
+
   input[type=text], input[type=date], textarea,
   select {
     width: 100%; 
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) 
+{
   form > div > label,
-    legend {
-      text-align: right;
+    legend 
+  {
+    text-align: right;
   }
 }
 
-.card {
+.card 
+{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 600px;
   margin: auto;
   text-align: center;
   font-family: arial;
-  }
+}
   
-  .title
-  {
-    font-weight: bold;
-    font-size: 50px;
-  }
+.title
+{
+  font-weight: bold;
+  font-size: 50px;
+}
 
-  .other
-  {
-    font-weight: bold;
-  }
+.other
+{
+  font-weight: bold;
+}
 
-  .nouveau 
+.nouveau 
+{
+  animation: blinker 1s linear infinite;
+  color: red;
+  font-size: 30px;
+}
+
+@keyframes blinker 
+{
+  50% 
   {
-    animation: blinker 1s linear infinite;
-    color: red;
-    font-size: 30px;
+    opacity: 0;
   }
-  
-  @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-  }
+}

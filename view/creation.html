@@ -1,109 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Formula ONE</title>
-        <link rel="stylesheet" type="text/css" href="../css/creation.css">
-        <link rel="stylesheet" type="text/css" href="../css/navbar.css">
-        <script type="text/javascript" src="../js/navigation.js"></script>
-        <script type="text/javascript" src="../js/creation.js"></script>    
-    </head>
-    <body>
-        <div class="topnav" id="myTopnav">
-            <a href="../view/index.html">Accueil</a>
-            <a href="../view/ecuries.html">Ecuries</a>
-            <a href="../view/circuits.html">Circuits</a>
-            <a href="../view/voitures.html">Voitures</a>
-            <a href="../view/coureurs.html">Coureurs</a>
-            <a href="../view/creation.html">Création</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  <head>
+      <title>Formula ONE</title>
+      <link rel="stylesheet" type="text/css" href="../css/creation.css">
+      <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+      <script type="text/javascript" src="../js/navigation.js"></script>
+      <script type="text/javascript" src="../js/creation.js"></script>    
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+        <a href="../view/index.html">Accueil</a>
+        <a href="../view/ecuries.html">Ecuries</a>
+        <a href="../view/circuits.html">Circuits</a>
+        <a href="../view/voitures.html">Voitures</a>
+        <a href="../view/coureurs.html">Coureurs</a>
+        <a href="../view/creation.html">Création</a>
+        <a href="../view/informations.html">Informations</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    <img id="img" src="../img/logof1.png">
+
+    <br>
+
+    <form action="#" id="form">
+        <div>
+          <label class="desc" id="title1" >Nom de courreur</label>
+          <div>
+            <input id="name" type="text" value="" size="8">
+          </div>
+        </div>
+          
+        <div>
+          <label class="desc" id="title4">Description</label>
+          <div>
+            <textarea id="description" spellcheck="true" rows="10" cols="50"></textarea>
+          </div>
+        </div>
+          
+        <div>
+          <fieldset>
+            <legend id="title5" class="desc">
+              Choisis ton écurie
+            </legend>
+            
+            <div>
+              <select id="ecuries" name=""> 
+                <option value="Ferrari">Ferrari</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Force India">Force India</option>
+                <option value="Alpha Romeo">Alpha Romeo</option>
+                <option value="Williams">Williams</option>
+                <option value="Rebull">Rebull</option>
+                <option value="Toro Rosso">Toro Rosso</option>
+                <option value="Renault">Renault</option>
+                <option value="Haas">Haas</option>
+                <option value="Mclaren">Mclaren</option>
+              </select>
+            </div>
+          </fieldset>
         </div>
         
-        <img id="img" src="../img/logof1.png">
-        <br>
-
-        <form action="#" id="form">
-            <div>
-              <label class="desc" id="title1" >Nom de courreur</label>
-              <div>
-                <input id="name" type="text" value="" size="8">
-              </div>
-            </div>
-              
-            <div>
-              <label class="desc" id="title4">Description</label>
-              <div>
-                <textarea id="description" spellcheck="true" rows="10" cols="50"></textarea>
-              </div>
-            </div>
-              
-            <div>
-              <fieldset>
-                <legend id="title5" class="desc">
-                  Choisis ton écurie
-                </legend>
-                
-                <div>
-                  <select id="ecuries" name=""> 
-                    <option value="Ferrari">Ferrari</option>
-                    <option value="Mercedes">Mercedes</option>
-                    <option value="Force India">Force India</option>
-                    <option value="Alpha Romeo">Alpha Romeo</option>
-                    <option value="Williams">Williams</option>
-                    <option value="Rebull">Rebull</option>
-                    <option value="Toro Rosso">Toro Rosso</option>
-                    <option value="Renault">Renault</option>
-                    <option value="Haas">Haas</option>
-                    <option value="Mclaren">Mclaren</option>
-                  </select>
-                </div>
-              </fieldset>
-            </div>
-            
-            <div>
-              <label class="desc" id="">
-                  Date de naissance
-              </label>
-              <div>
-                <input type="date" id="birth">
-              </div>
-            </div>
-            
-            <div>
-                <div>
-                    <button onclick="ajouter()" id="saveForm">Ajouter</button>
-                 </div>
-            </div>
-        </form>
-        
-        <div class="ferrari" id="result">
-            <div class="card" id="first">
-                <h3>Nouveau pilote pour la saison prochaine !</h3>
-                <img src="../img/creation/macron.jpg" style="width:100%">
-                <h2 id="title_name"></h2>
-                <p class="title">Courreur chez <span id="new"></span></p>
-                <p>Il se decrit comme "<span id="description1" class="other"></span>", en effet ce coureur d'élite a tout pour impresionner le publique lors de la prochaine saison. Avec un fort carisme, il va facilement se placer sur le podium dès les premières courses... Coureur à suivre !</p>
-                <p>Et le voilà né le <span id="birth1" class="other"></span>, il s'élance dans le monde des grands. Connu pour ces performances incroyables, ce courreur est pret à relever tous les defis !!!</p>
-            </div>
-
-        
-                <div>
-                    <button onclick="nouveau()" class="nouveau">Nouveau</button>
-                 </div>
-            
+        <div>
+          <label class="desc" id="">
+              Date de naissance
+          </label>
+          <div>
+            <input type="date" id="birth">
+          </div>
         </div>
-        <footer id="footer">
+        
+        <div>
             <div>
-              <h5>Par LOGEAIS - ARAUJO - BEN JALEL</h5>
-            </div>
-            <div id="social">
-              <ul class="social">
-                <li><a href="https://www.facebook.com/Formula1/">Facebook</a></li>
-                <li><a href="https://twitter.com/F1">Twitter</a></li>
-                <li><a href="https://www.youtube.com/user/Formula1">YouTube</a></li>
-                <li><a href="https://www.linkedin.com/company/formula-one-management-ltd/">LinkedIn</a></li>
-              </ul>
-            </div>
-        </footer>
-    </body>
-    <script> block(); </script>
+                <button onclick="ajouter()" id="saveForm">Ajouter</button>
+              </div>
+        </div>
+    </form>
+    
+    <div class="ferrari" id="result">
+        <div class="card" id="first">
+            <h3>Nouveau pilote pour la saison prochaine !</h3>
+            <img src="../img/creation/macron.jpg" style="width:100%">
+            <h2 id="title_name"></h2>
+            <p class="title">Courreur chez <span id="new"></span></p>
+            <p>Il se decrit comme "<span id="description1" class="other"></span>", en effet ce coureur d'élite a tout pour impresionner le publique lors de la prochaine saison. Avec un fort carisme, il va facilement se placer sur le podium dès les premières courses... Coureur à suivre !</p>
+            <p>Et le voilà né le <span id="birth1" class="other"></span>, il s'élance dans le monde des grands. Connu pour ces performances incroyables, ce courreur est pret à relever tous les defis !!!</p>
+        </div>
+
+    
+            <div>
+                <button onclick="nouveau()" class="nouveau">Nouveau</button>
+              </div>
+        
+    </div>
+    <footer id="footer">
+        <div>
+          <h5>Par LOGEAIS - ARAUJO - BEN JALEL</h5>
+        </div>
+        <div id="social">
+          <ul class="social">
+            <li><a href="https://www.facebook.com/Formula1/">Facebook</a></li>
+            <li><a href="https://twitter.com/F1">Twitter</a></li>
+            <li><a href="https://www.youtube.com/user/Formula1">YouTube</a></li>
+            <li><a href="https://www.linkedin.com/company/formula-one-management-ltd/">LinkedIn</a></li>
+          </ul>
+        </div>
+    </footer>
+  </body>
+  <script> block(); </script>
 </html>

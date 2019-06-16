@@ -1,7 +1,8 @@
-@font-face {
-    font-family: F1;
-    src: url(../police/Formula1-Bold.otf);
-  }
+@font-face 
+{
+  font-family: F1;
+  src: url(../police/Formula1-Bold.otf);
+}
 
   html, body {
     font-family: F1, "DejaVu Sans Mono", "Lucida Console", "Andale Mono", monospace;
@@ -128,21 +129,39 @@
   text-align: center;
 }
 
-footer li {
+footer li
+{
   font-size: .800em;
   list-style-type: none;
 }
 
-#social ul.social {
-  display: inline-block;
+footer a
+{
+  color: white;
+  text-decoration:none; 
+}
+
+#social ul.social 
+{
+  display: inline-flex;
   text-align: center;
 }
-#social li {
+
+#social li
+{
   margin: 0 17px 0 0;
   list-style-type: none;
 }
-@media only screen and (max-width: 485px) {
-	#social li {
+
+li a:hover 
+{
+  background-color: red;
+}
+
+@media only screen and (max-width: 485px) 
+{
+  #social li 
+  {
 		margin: 0 0 10px 0;
 		float: none;
 		clear: both;
