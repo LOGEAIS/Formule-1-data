@@ -108,9 +108,18 @@
 
 /*Footer*/
 
-footer 
+#index
 {
   position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #de0b05;
+  color: white;
+  text-align: center;
+}
+#footer
+{
   left: 0;
   bottom: 0;
   width: 100%;
